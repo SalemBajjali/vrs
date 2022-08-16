@@ -924,6 +924,27 @@
             "type"
          ]
       },
+      "Salem": {
+         "description": "Does this work?",
+         "type": "object",
+         "additionalProperties": false,
+         "properties": {
+            "type": {
+               "type": "string",
+               "const": "Salem_const",
+               "default": "Salem_def",
+               "description": "MUST be \"Number\""
+            },
+            "value": {
+               "type": "integer",
+               "description": "The value represented by Number"
+            }
+         },
+         "required": [
+            "type",
+            "value"
+         ]
+      },
       "Number": {
          "description": "A simple integer value as a VRS class.",
          "type": "object",
