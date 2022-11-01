@@ -150,3 +150,5 @@ VRS does not define a diplotype class:
 - we are not forces into that assumption in VRS
 - wants us to say what is at this locus. 
 
+
+This will be reviewed shortly.
