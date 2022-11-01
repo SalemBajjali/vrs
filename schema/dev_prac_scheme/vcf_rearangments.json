@@ -1,0 +1,114 @@
+{
+    "Segment":
+    [
+        {
+            "JoinedRegion":
+            {
+                "Region":
+                {
+                    "RegionCoordinates":
+                    {
+                        "Ref":
+                        {
+                            "GenomeAssembly": "GRCH37",
+                            "chromosome": "2"
+                        },
+                        "Start": null,
+                        "Stop": 
+                        {
+                            "Min": 321681,
+                            "Max": 321681
+                        },
+                        "RegionExpression": null
+                    },
+                    "NamedRegion": null
+                },
+                "ResidueLiteral": null,
+                "Copies": null,
+                "isInverted": false
+            }
+        },
+        {
+            "JoinedRegion":
+            {
+                "Region":
+                {
+                    "RegionCoordinates":
+                    {
+                        "Ref":
+                        {
+                            "GenomeAssembly": "GRCH37",
+                            "chromosome": "2"
+                        },
+                        "Start":
+                        {
+                            "Min": 123457,
+                            "Max": 123457
+                        },
+                        "Stop": null,
+                        "RegionExpression": null
+                    },
+                    "NamedRegion": null
+                },
+                "ResidueLiteral": null,
+                "Copies": null,
+                "isInverted": false
+            }
+        },
+        {
+            "JoinedRegion":
+            {
+                "Region":
+                {
+                    "RegionCoordinates":
+                    {
+                        "Ref":
+                        {
+                            "GenomeAssembly": "GRCH37",
+                            "chromosome": "2"
+                        },
+                        "Start": null,
+                        "Stop": 
+                        {
+                            "Min": 123457,
+                            "Max": 123457
+                        },
+                        "RegionExpression": null
+                    },
+                    "NamedRegion": null
+                },
+                "ResidueLiteral": null,
+                "Copies": null,
+                "isInverted": false
+            }
+        },
+        {
+            "JoinedRegion":
+            {
+                "Region":
+                {
+                    "RegionCoordinates":
+                    {
+                        "Ref":
+                        {
+                            "GenomeAssembly": "GRCH37",
+                            "chromosome": "2"
+                        },
+                        "Start":
+                        {
+                            "Min": 321681,
+                            "Max":321681
+                        },
+                        "Stop": null,
+                        "RegionExpression": null
+                    },
+                    "NamedRegion": null
+                },
+                "ResidueLiteral": null,
+                "Copies": null,
+                "isInverted": false
+            }
+        }
+
+    ]
+}

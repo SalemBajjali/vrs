@@ -1,0 +1,50 @@
+{
+    "Segment":
+    [
+        {
+            "JoinedRegion":
+            {
+                "Region":
+                {
+                    "RegionCoordinates": null,
+                    "NamedRegion":
+                    {
+                        "GeneDescriptor":
+                        {
+                            "codingsystem": "HGNC",
+                            "code": "7123",
+                            "symbol": "KMT2a"
+                        }
+                    }
+                },
+                "ResidueLiteral": null,
+                "copies": null,
+                "isInverted": false
+            }
+        },
+        {
+            "JoinedRegion":
+            {
+                "Region":
+                {
+                    "RegionCoordinates": null,
+                    "NamedRegion":
+                    {
+                        "GeneDescriptor":
+                        {
+                            "codingsystem": "HGNC",
+                            "code": "7136",
+                            "symbol": "MLLT3"
+                        }
+                    }
+                },
+                "ResidueLiteral": null,
+                "copies": null,
+                "isInverted": false
+            }
+        }
+
+    ]
+}
+
+

@@ -486,6 +486,9 @@
                      "$ref": "#/definitions/IndefiniteRange"
                   },
                   {
+                     "$ref": "#/definitions/EstimatedRange"
+                  },
+                  {
                      "$ref": "#/definitions/DefiniteRange"
                   }
                ],
@@ -498,6 +501,9 @@
                   },
                   {
                      "$ref": "#/definitions/IndefiniteRange"
+                  },
+                  {
+                     "$ref": "#/definitions/EstimatedRange"
                   },
                   {
                      "$ref": "#/definitions/DefiniteRange"
@@ -547,6 +553,26 @@
                   }
                }
             },
+            {
+             "if": {
+                "properties": {
+                   "start": {
+                      "$ref": "#/definitions/EstimatedRange"
+                   }
+                }
+             },
+             "then": {
+                "properties": {
+                   "start": {
+                      "properties": {
+                         "value": {
+                            "minimum": 0
+                         }
+                      }
+                   }
+                }
+             }
+          },
             {
                "if": {
                   "properties": {
@@ -610,6 +636,26 @@
                   }
                }
             },
+            {
+             "if": {
+                "properties": {
+                   "end": {
+                      "$ref": "#/definitions/EstimatedRange"
+                   }
+                }
+             },
+             "then": {
+                "properties": {
+                   "end": {
+                      "properties": {
+                         "value": {
+                            "minimum": 0
+                         }
+                      }
+                   }
+                }
+             }
+          },
             {
                "if": {
                   "properties": {
@@ -924,25 +970,35 @@
             "type"
          ]
       },
-      "Salem": {
-         "description": "Does this work?",
+      "EstimatedRange": {
+         "description": "Creating a new basic type variable. ",
          "type": "object",
          "additionalProperties": false,
          "properties": {
             "type": {
                "type": "string",
-               "const": "Salem_const",
-               "default": "Salem_def",
-               "description": "MUST be \"Number\""
+               "const": "EstimatedRange",
+               "default": "EstimatedRange",
+               "description": "MUST be \"EstimatedRange\""
             },
             "value": {
-               "type": "integer",
-               "description": "The value represented by Number"
+               "type": "number",
+               "description": "The bounded value; inclusive"
+            },
+            "comparator": {
+             "type": "string",
+             "enum": [
+                   "<",
+                   ">"
+             ],
+             "description": "MUST be one of \"<\" or \">\", indicating which direction the range is estimated"
+                
             }
          },
          "required": [
-            "type",
-            "value"
+            "comparator",
+            "value",
+            "type"
          ]
       },
       "Number": {
